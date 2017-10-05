@@ -14,7 +14,7 @@ public class massivodnomer {
         int array1 = 1;
         int array2 = 1;
         for(int i=2; i<n.length; i++){
-            n[i] = array1+array2;
+            n[i] =  array1+array2;
             array2=array1;
             array1 = n[i];
         }

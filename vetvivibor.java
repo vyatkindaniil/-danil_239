@@ -1,7 +1,7 @@
 package directorii;
 import java.util.Scanner;
 
-public class vetvivibor {
+public class  vetvivibor {
     public static void main(String[] args) {
     double x;
     double y;

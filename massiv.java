@@ -2,7 +2,7 @@ package directorii.uslojnen.dvumer;
 import java.util.Random;
 public class massiv {
     public static void main(String[] args) {
-        Random rnd = new Random();
+        Random  rnd = new Random();
         final int N =rnd.nextInt(10)+1;
         final int M=rnd.nextInt (10)+1;
         int max=0;

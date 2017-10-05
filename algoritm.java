@@ -6,7 +6,7 @@ package directorii.uslojnen;
 import java.util.Scanner;
 public class algoritm {
     public static void main(String[] args) {
-        double N = 0;
+        double N  = 0;
         double m = 0;
         double z=0;
         Scanner scn = new Scanner(System.in);

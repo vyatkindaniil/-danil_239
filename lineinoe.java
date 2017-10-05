@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class lineinoe {
     public static void main( String[] args){
     int R, r;
-    double S;
+    double  S;
     Scanner in = new Scanner(System.in);
     System.out.print("Введи внешний радиус R = ");
     R = in.nextInt();
