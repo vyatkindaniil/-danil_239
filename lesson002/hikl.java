@@ -23,6 +23,7 @@ public class hikl  {
         sum2 += chislo;
         i ++;
     }
+
     System.out.print("езультат первого спорцмена" + sum1);
     System.out.print("результат второго спорцмена" + sum2);
 }
