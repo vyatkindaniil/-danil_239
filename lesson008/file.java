@@ -9,10 +9,31 @@ import java.util.*;
  */
 public class file {
     public static void main(String[] args) throws Exception {
-        FileReader fileReader = new FileReader("E:/123.txt");
-        Scanner reader = new Scanner(fileReader);
-
-
-
+       //Создаем файл
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите диск куда сохранить файл: ");
+        String file = in.nextLine();
+        System.out.print("Введите название файла: ");
+        String fileName = in.nextLine();
+        System.out.print("Введите количество строк: ");
+        int k = in.nextInt();
+        in.nextLine();
+        Random rnd = new Random();
+        FileWriter fileWriter = new FileWriter(file + ":\\" + fileName);
+        for (int i = 0; i < k; i++) {
+           System.out.print("Введите количество цифр в [" + i + "] строке: ");
+            int n = in.nextInt();
+            for (int j = 0; j < n; j++) {
+                fileWriter.write((rnd.nextInt(20) + 1) + " ");
             }
+            fileWriter.write("\n");
+        }
+
+        fileWriter.close();
+        FileReader fileReader = new FileReader(file + ":\\" + fileName);
+        Scanner reader = new Scanner(fileReader);
+        while (reader.hasNextLine()) {
+
+        }
     }
+}

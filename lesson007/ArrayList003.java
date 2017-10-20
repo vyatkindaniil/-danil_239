@@ -32,16 +32,16 @@ public class ArrayList003 {
                 String [] str=new String[h];
                 char one=slovo2.charAt(0);
                 char last=slovo2.charAt(slovo2.length()-1);
-//вывод
-
-                System.out.print(last);
-                for(int b=1;b<slovo2.length()-1;b++){
-
-                    System.out.print(slovo2.charAt(b));
-
-                }
-                System.out.println(one);
+                //вывод
+                String u= "";
+                u = u + last  ;
+                for(int b=1;b<slovo2.length()-1;b++) {
+             u=u+ slovo2.charAt(b);
             }
+            u=u+one;
+
+
+                System.out.println(u);
         }
     }
-}
+}}
