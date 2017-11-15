@@ -13,11 +13,23 @@ public class file5 {
         while (reader.hasNextLine()) {
             array.add(reader.nextLine());
         }
+        // условие Б
         for(int i=0;i<array.size();i++){
-            if (i==5){
-                array.add(5,"----------");
-            }
+        String N= array.get(i);
+           for (int j=0;j< N.length();j++){
+               char simvol = ' ';
+               if(N.charAt(j) == simvol) {
+                   break;
+               }
+               int g=N.length()-1;
+               if(g==j){
+                   array.add(i+1,"----------");
+                   i++;
+               }
+           }
         }
+        //условие A
+        array.add(5,"----------");
         FileWriter fileWriter1 = new FileWriter("E://111/mane12.txt");
         for (int i = 0; i < array.size(); i++) {
             fileWriter1.write(array.get(i));
