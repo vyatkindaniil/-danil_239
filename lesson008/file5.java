@@ -29,8 +29,12 @@ public class file5 {
            }
         }
         //условие A
-        array.add(5,"----------");
-        FileWriter fileWriter1 = new FileWriter("E://111/mane12.txt");
+        if(array.size()-1 < 5) {
+            array.add("------------");
+        }else {
+            array.add(5,"----------");
+        }
+        FileWriter fileWriter1 = new FileWriter ("E://111/mane12.txt");
         for (int i = 0; i < array.size(); i++) {
             fileWriter1.write(array.get(i));
             fileWriter1.write("\n");
